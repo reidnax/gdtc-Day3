@@ -223,6 +223,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  top: 40%; 
+  left: 35%; 
+  /*margin: -100px 0 0 -150px;*/
 }
 
 #hero h1 {
@@ -269,7 +272,8 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  /* Ugly Padding */
+  padding: 0 0;
   overflow: hidden;
 }
 
@@ -278,7 +282,12 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  /* Give Me Padding */
+}
+
+.section-title p{
+  /* Do something with me too */
+  margin-bottom: 0;
 }
 
 .section-title h2 {
@@ -317,6 +326,8 @@ section {
 .about .content ul {
   list-style: none;
   padding: 0;
+  /* REMOVE MY MARGIN */
+  margin-bottom: 0;
 }
 
 .about .content ul li {
@@ -341,13 +352,15 @@ section {
 }
 
 .facts .count-box {
-  padding: 30px;
+  /* Ugly Padding */
+  padding: 0;
   width: 100%;
 }
 
 .facts .count-box i {
   display: block;
-  font-size: 44px;
+  /* Ugly Font Size */
+  font-size: 50px;
   color: #149ddd;
   float: left;
 }
@@ -1047,10 +1060,10 @@ section {
   padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
-  /* position: fixed; */
+  position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 300px;
   z-index: 9999;
   background: #040b14;
 }
